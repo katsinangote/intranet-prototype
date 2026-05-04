@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>LRFCU Intranet</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        background: #f4f6f9;
+    }
+    header {
+        background: #003366;
+        color: white;
+        padding: 15px;
+        display: flex;
+        justify-content: space-between;
+    }
+    nav {
+        background: #0055a5;
+        padding: 10px;
+        color: white;
+    }
+    nav a {
+        color: white;
+        margin-right: 15px;
+        text-decoration: none;
+        font-weight: bold;
+    }
+    .hero {
+        background: #e6f0ff;
+        padding: 30px;
+        text-align: center;
+    }
+    .hero button {
+        margin: 10px;
+        padding: 10px 15px;
+        border: none;
+        background: #0055a5;
+        color: white;
+        cursor: pointer;
+    }
+    .section {
+        padding: 20px;
+    }
+    .grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 15px;
+    }
+    .card {
+        background: white;
+        padding: 15px;
+        border-radius: 8px;
+        cursor: pointer;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    .card:hover {
+        background: #eef5ff;
+    }
+    footer {
+        background: #003366;
+        color: white;
+        text-align: center;
+        padding: 15px;
+        margin-top: 20px;
+    }
+</style>
+
+<script>
+function showPage(name) {
+    alert("Opening: " + name);
+}
+</script>
+
+</head>
+
+<body>
+
+<header>
+    <div><strong>LRFCU Intranet</strong></div>
+    <div>🔔 Profile</div>
+</header>
+
+<nav>
+    <a href="#" onclick="showPage('Home')">Home</a>
+    <a href="#" onclick="showPage('HR Hub')">HR Hub</a>
+    <a href="#" onclick="showPage('Operations')">Operations</a>
+    <a href="#" onclick="showPage('Compliance')">Compliance</a>
+    <a href="#" onclick="showPage('Security')">Security</a>
+</nav>
+
+<div class="hero">
+    <h1>Welcome to LRFCU Intranet</h1>
+    <p>Your central hub for tools and resources</p>
+    <button onclick="showPage('HR Request')">HR Request</button>
+    <button onclick="showPage('Payroll (ADP)')">View Payroll</button>
+    <button onclick="showPage('IT Helpdesk')">IT Ticket</button>
+    <button onclick="showPage('Calendar')">Calendar</button>
+</div>
+
+<div class="section">
+    <h2>📢 Announcements</h2>
+    <div class="grid">
+        <div class="card" onclick="showPage('Employee of the Month')">Employee of the Month</div>
+        <div class="card" onclick="showPage('New Loan Rates')">New Loan Rates</div>
+        <div class="card" onclick="showPage('New Hires')">New Hire Announcements</div>
+        <div class="card" onclick="showPage('Survey')">Employee Survey</div>
+    </div>
+</div>
+
+<div class="section">
+    <h2>👥 HR Hub</h2>
+    <div class="grid">
+        <div class="card" onclick="showPage('Handbook & Forms')">Handbook & Forms</div>
+        <div class="card" onclick="showPage('Benefits')">Benefits & Wellness</div>
+        <div class="card" onclick="showPage('Payroll')">Payroll (ADP)</div>
+        <div class="card" onclick="showPage('Training')">Training</div>
+        <div class="card" onclick="showPage('Engagement')">Engagement</div>
+        <div class="card" onclick="showPage('Org Chart')">Org Chart</div>
+    </div>
+</div>
+
+<div class="section">
+    <h2>🏦 Operations</h2>
+    <div class="grid">
+        <div class="card" onclick="showPage('Products')">Products & Services</div>
+        <div class="card" onclick="showPage('Loan Rates')">Loan Rates</div>
+        <div class="card" onclick="showPage('Deposit Rates')">Deposit Rates</div>
+        <div class="card" onclick="showPage('FAQs')">FAQs</div>
+    </div>
+</div>
+
+<div class="section">
+    <h2>⚙️ Daily Operations</h2>
+    <div class="grid">
+        <div class="card" onclick="showPage('Procedures')">Procedures</div>
+        <div class="card" onclick="showPage('Forms')">Forms</div>
+        <div class="card" onclick="showPage('Checklists')">Checklists</div>
+    </div>
+</div>
+
+<div class="section">
+    <h2>🛡️ Compliance & Security</h2>
+    <div class="grid">
+        <div class="card" onclick="showPage('NCUA')">NCUA Resources</div>
+        <div class="card" onclick="showPage('BSA/AML')">BSA/AML</div>
+        <div class="card" onclick="showPage('Cybersecurity')">Cybersecurity</div>
+        <div class="card" onclick="showPage('Fraud Prevention')">Fraud Prevention</div>
+    </div>
+</div>
+
+<div class="section">
+    <h2>⚡ Quick Links</h2>
+    <div class="grid">
+        <div class="card" onclick="showPage('IT Helpdesk')">IT Helpdesk</div>
+        <div class="card" onclick="showPage('ADP')">ADP</div>
+        <div class="card" onclick="showPage('Core System')">Core System</div>
+        <div class="card" onclick="showPage('Forms Library')">Forms Library</div>
+    </div>
+</div>
+
+<footer>
+    © LRFCU | Internal Use Only
+</footer>
+
+</body>
+</html>
